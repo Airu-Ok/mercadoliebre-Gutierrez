@@ -4,8 +4,8 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.listen(3000, ()=> {
-    console.log('servidor funcionando');
+app.listen(precess.env.PORT || 3000, ()=> {
+    console.log('servidor funcionando bien');
 });
 
 console.log(__dirname);
