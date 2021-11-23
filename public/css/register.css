@@ -4,6 +4,7 @@ main{
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    max-width: 90%;
 }
 form{
     display: flex;
@@ -96,4 +97,10 @@ main p{
 .buton input:hover{
     background-color: #04a;
     color: rgb(0, 0, 0);
+}
+
+@media(max-width:361){
+    main{
+        display: block;
+    }
 }

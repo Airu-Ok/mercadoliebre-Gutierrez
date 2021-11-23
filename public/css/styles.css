@@ -192,7 +192,6 @@ main section article:hover .descripcion{
     display: block;
 }
 
-
 footer section {
     display: flex;
     text-align: center;
@@ -202,6 +201,7 @@ footer section {
 }
 
 footer section article{
+    display: block;
     padding: 30px;
 }
 
@@ -221,7 +221,6 @@ footer section article i {
     font-size: 2.5em;
     color: #04a;
     margin:auto;
-    padding: 15px;
     width: 30px;
     height: 30px;
 }
@@ -305,6 +304,10 @@ h5{
         width: 100%;
         text-align: center;
     }
+
+    
+
+
     footer article h3{
         font-size: 24px;
     }
@@ -313,6 +316,22 @@ h5{
     }
     h5{
         font-size: 15px;
+    }
+}
+
+@media(max-width:769px){
+    footer section{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    footer section article i {
+        font-size: 20px;
+        color: #04a;
+        margin:auto;
+        padding: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
 @media (min-width: 769px){
