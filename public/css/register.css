@@ -1,0 +1,99 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%
+}
+
+main p{
+    padding-right: 70px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.user{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin: 20px auto;
+
+
+}
+.user input{
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.accion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #000;
+    text-align: center;
+}
+.preferencias{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.avatar{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.password{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin: 20px auto;
+    
+}
+.password input{
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+}
+.buton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.buton input{
+    color: #fff;
+    background:#666; 
+    padding: 12px;
+    max-width: 200px;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    width: 50%;
+    margin: 20px;
+}
+.buton input:hover{
+    background-color: #04a;
+    color: rgb(0, 0, 0);
+}

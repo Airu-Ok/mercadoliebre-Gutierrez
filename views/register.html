@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+        <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLibre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <form action="#" method="GET">
+                    <Label for="search"></Label>
+                    <input type="text" placeholder="¿Qué estás buscando?" name="search" id="search">
+                        <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <p class="info-eslogan"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li> <a href="#">Ofertas</a></li>
+                <li> <a href="#">Tiendas Oficiales</a></li>
+                <li> <a href="#">Vender</a></li>
+                <li> <a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a> </li>
+                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a> </li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a> </li>
+            </ul>
+
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </div>
+    </header>
+    <main>
+
+        <!-- Titulo Registro...  -->
+        <p class="register-user">Registrarse</p>
+        <!-- Comienza el formulario  -->
+        <form action="/login.html" method="POST">
+         <!-- Poner nombre y apellido de usuario  -->
+         <div class="user">
+            <label for="nombre"></label>
+            <input type="text" placeholder="Nombre" name="usuario" id="nombre" required>
+            <input type="text" placeholder="Apellido" name="usuario" id="apellido" required>
+            <label for="user"></label>
+            <input type="text" placeholder="Nombre de usuari@" name="usuario" id="user" required>
+            <input type="date" name="fecha" value="1997-05-24" required>
+            <label for="domicilio"></label>
+            <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio" required>
+         </div> 
+
+                <p>¿Qué quieres hacer?</p>
+            <div class="accion">
+            <label for="vender">
+                <input type="radio" name="accion" value="Vender" id="vender">Vender
+            </label>
+            <label for="comprar">
+                <input type="radio" name="accion" value="Comprar" id="comprar">Comprar
+            </label>
+            </div>
+
+                <p>Tus preferencias:</p>
+                <div class="preferencias">
+                <label for="electro">
+                    <input type="checkbox" name="electro">Electro
+                </label>
+                <label for="moda">
+                    <input type="checkbox" name="moda">Moda
+                </label>
+                <label for="hogar">
+                    <input type="checkbox" name="hogar">Hogar
+                </label>
+                <label for="jugueteria">
+                    <input type="checkbox" name="jugueteria">Jugueteria
+                </label>
+                <label for="vida-sana">
+                    <input type="checkbox" name="vida-sana">Vida sana
+                </label>
+                </div>
+                <div class="avatar">
+                <label>Seleccionar una imagen para el perfil:</label>
+                <input type="file" name="avatar" accept=".jpg" multiple>
+                </div>
+                <!-- Poner contraseña de usuario  -->
+                <div class="password">
+                    <label for="password"></label>
+                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" required>
+                
+                    <!-- Poner contraseña de usuario, confirmar  -->
+                    <label for="password"></label>
+                    <input type="password" placeholder="Confirmar tu contraseña" name="password" id="password" required>
+                </div>
+             <!-- Boton de Registro -->
+        <section class="buton">
+            <input type="submit" value="Registrarme">
+            <input type="reset" value="Resetear">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <article>
+                <div class="tarjeta">
+                    <i class="fas fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+            </article>
+            <article>
+                <div class="regalo">
+                    <i class="fas fa-gift"></i>
+                <h3>Envío gratis desde $2.500</h3>
+                <p>Sólo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+                </div>
+            </article>
+            <article>
+                <div class="seguro">
+                    <i class="fas fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido</p>
+                </div>
+            </article>
+        </section>
+            <article>
+                <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+            </article>
+    </footer>
+    
+</body>
+</html>

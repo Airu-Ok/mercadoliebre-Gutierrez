@@ -15,6 +15,7 @@ h3{
     font-size: 24px;
 }
 header{
+    width: 100%;
     background-color: #eac926;
     padding: 10px;
 }
@@ -81,6 +82,7 @@ header ul li a{
     text-align: center;
     padding: 5px 0;
     font-size: 15px;
+    font-weight: bold;
 }
 div.burger-menu i{
     display: flex;
@@ -92,6 +94,14 @@ div.burger-menu i{
     padding: 1%;
     margin: 10px auto 0;
 }
+main section div.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 
 .precio{
     font-size: 18px;
@@ -156,6 +166,13 @@ main section article i{
 main section h3{
     margin: 20px 0px;
 }
+main section div.productos article i{
+    transition: transform 1s;
+}
+
+main section div.productos article:hover i{
+    transform: rotate(-90deg);
+}
 
 main article div.articulo{
     width: 100%;
@@ -165,6 +182,7 @@ main article div.articulo{
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
+    
 }
 
 main section article:hover{
@@ -175,9 +193,10 @@ main section article:hover .descripcion{
 }
 
 
-footer{
+footer section {
+    display: flex;
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 2%;
     background-color: white;
 }
@@ -205,6 +224,9 @@ footer section article i {
     padding: 15px;
     width: 30px;
     height: 30px;
+}
+h5{
+    text-align: center;
 }
 @media (min-width: 361px){
     .top-header {
@@ -356,17 +378,21 @@ footer section article i {
         opacity: 0;
         transition: opacity 0.5s;
     }
+
+    main section div.productos article{
+        width: 22%;
+    }
     .descripcion:hover{
         opacity: 1;
     }
     main section article{
+        padding: 0 5px;
         box-shadow: none;
     }
     main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .productos{
-        width: 100%;
+    main section div .productos{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -390,10 +416,7 @@ footer section article i {
     .descripcion{
         width: 100%;
     }
-    footer section{
-        display: flex;
-        flex-direction: column;
-    }
+    
     footer section article div h3{
         font-size: 25px;
         font-weight: bold;
